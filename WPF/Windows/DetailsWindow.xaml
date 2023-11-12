@@ -1,0 +1,48 @@
+﻿<Window
+        x:Class="WPF.Windows.DetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lang="clr-namespace:WPF.Properties"
+        mc:Ignorable="d"
+        Title="Details" Height="350" Width="250" WindowStartupLocation="CenterScreen">
+    <Grid Background="Azure">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lblCountry" Content="Country:" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblFifaCode" Content="FIFA code:" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <Label x:Name="lblGamesPlayed" Content="Games played:" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <Label x:Name="lblWins" Content="Wins:" Grid.Column="1" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <Label x:Name="lblLoss" Content="Losses:" Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,37,0,37" Grid.RowSpan="3"/>
+        <Label x:Name="lblDraws" Content="Draws:" Grid.Column="1" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <Label x:Name="lblGoalsFor" Content="Goals for:" Grid.Column="1" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <Label x:Name="lblGoalsAgainst" Content="Goals against:" Grid.Column="1" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <Label x:Name="lblGoalsDiff" Content="Goal diffs:" Grid.Column="1" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Grid.ColumnSpan="2"/>
+
+        <Label Content="{x:Static lang:Resources.lblCountry}" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black"/>
+        <Label Content="FIFA code:" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <Label Content="{x:Static lang:Resources.lblGamesPlayed}" Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <Label Content="{x:Static lang:Resources.lblWins}" Grid.Column="0" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Margin="0,37,0,0" Grid.RowSpan="2"/>
+        <Label Content="{x:Static lang:Resources.lblLoss}" Grid.Column="0" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Margin="0,37,0,37" Grid.RowSpan="3"/>
+        <Label Content="{x:Static lang:Resources.lblDraws}" Grid.Column="0" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <Label Content="{x:Static lang:Resources.lblGoalsFor}" Grid.Column="0" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <Label Content="{x:Static lang:Resources.lblGoalsAgainst}" Grid.Column="0" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" Margin="0,0,0,37" Grid.RowSpan="2"/>
+        <Label Content="{x:Static lang:Resources.lblGoalsDiff_}" Grid.Column="0" Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black"/>
+    </Grid>
+</Window>

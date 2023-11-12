@@ -1,0 +1,41 @@
+﻿<Window x:Class="WPF.Windows.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lang="clr-namespace:WPF.Properties"
+        xmlns:local="clr-namespace:WPF.Windows"
+        mc:Ignorable="d"
+        Title="SettingsWindow" Height="367" Width="297" Closed="Window_Closed" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="gridSettings" Background="Azure">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="203*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Margin="32,32,32,32" Grid.ColumnSpan="2">
+            <Label FontWeight="Bold">Language</Label>
+            <RadioButton GroupName="group" x:Name="rbtnEnglish">English</RadioButton>
+            <RadioButton GroupName="group" x:Name="rbtnCroatian">Croatian</RadioButton>
+            <Label FontWeight="Bold">Gender</Label>
+            <RadioButton GroupName="group1" x:Name="rbtnMale">Men</RadioButton>
+            <RadioButton GroupName="group1" x:Name="rbtnFemale">Women</RadioButton>
+            <Label FontWeight="Bold">Resolution</Label>
+            <RadioButton GroupName="group2" x:Name="rbtn800x600">800x600</RadioButton>
+            <RadioButton GroupName="group2" x:Name="rbtn1280x720">1280x720</RadioButton>
+            <RadioButton GroupName="group2" x:Name="rbtn1920x1080">1920x1080</RadioButton>
+            <RadioButton GroupName="group2" x:Name="rbtnFullscreen">Fullscreen</RadioButton>
+        </StackPanel>
+
+
+
+
+        <Button Content="{x:Static lang:Resources.btnAccept}" Grid.Row="1" Grid.Column="1" Width="auto" Height="auto" Click="ButtonAccept_Click" Margin="16" Padding="8" />
+        <Button Content="{x:Static lang:Resources.btnCancel}" Grid.Row="1" Grid.Column="0" Width="auto" Height="auto" Click="ButtonCancel_Click" Margin="16" Padding="8" />
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="459,170,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+    </Grid>
+</Window>
